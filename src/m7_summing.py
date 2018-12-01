@@ -31,10 +31,19 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
     #Test 1:
     predicted = 1.54
+    actual = sum_cosines(1)
+    print('Test 1 predicted:', predicted)
+    print('          Actual:', actual)
+    #Test 2:
+    predicted = 1.12
     actual = sum_cosines(2)
-    print('Predicted:', predicted)
-    print('   Actual:', actual)
-
+    print('Test 2 predicted:', predicted)
+    print('          Actual:', actual)
+    # Test 3:
+    predicted = 0.13
+    actual = sum_cosines(3)
+    print('Test 3 predicted:', predicted)
+    print('          Actual:', actual)
 
 def sum_cosines(n):
     """
@@ -54,8 +63,10 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
+    total = 0
     for k in range (n+1):
         total = total + math.cos(n)
+    return total
 
 
 def run_test_sum_square_roots():
