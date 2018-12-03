@@ -156,8 +156,8 @@ def lines():
     line2.attach_to(window)
     print("Lines:")
     print(line2.get_midpoint())
-
-    ###MIDPOINT OF THICKER LINE COORDINATE SPECIFIC NEEDED
+    print(line2.get_midpoint().x)
+    print(line2.get_midpoint().y)
     window.render()
     window.close_on_mouse_click()
 
