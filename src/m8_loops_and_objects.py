@@ -131,11 +131,13 @@ def draw_circles2():
     x = 50
     center_point = rg.Point(x, 100)
     circle = rg.Circle(center_point, 10)
+    circle.fill_color = 'blue'
     circle.attach_to(window1)
     for k in range(17):
         x = x + 20
         center_point = rg.Point(x, 100)
         circle = rg.Circle(center_point,10)
+        circle.fill_color = 'blue'
         circle.attach_to(window1)
     window1.render()
     window1.close_on_mouse_click()
